@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fs-searchfund.com/sitemap.xml
