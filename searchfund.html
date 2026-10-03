@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Search Fund Model – FS SearchFund</title>
 <meta name="description" content="How search funds work: searching, acquiring and growing an established company, and why it matters for Mittelstand succession.">
 <link rel="canonical" href="https://fs-searchfund.com/searchfund">
@@ -10,6 +10,7 @@
 <meta property="og:title" content="The Search Fund Model – FS SearchFund">
 <meta property="og:description" content="How search funds work: searching, acquiring and growing an established company, and why it matters for Mittelstand succession.">
 <meta property="og:url" content="https://fs-searchfund.com/searchfund">
+<meta name="theme-color" content="#0a1e5c">
 <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
@@ -31,6 +32,56 @@
     .nav-toggle{display:flex}
     .nav-check:checked ~ .nav-drawer{display:flex}
   }
+  html,body{overflow-x:hidden;max-width:100%}
+  @supports (overflow:clip){html,body{overflow-x:clip}}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  img,svg{max-width:100%}
+  h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+  @media (max-width:1060px){
+    .m0{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  }
+  @media (max-width:760px){
+    header{padding:10px 20px !important;min-height:64px !important}
+    .m1.m2,.m3.m2,.m4.m2{padding-left:20px !important;padding-right:20px !important}
+    section .m1.m5,section .m1.m6,section .m3.m6,section .m3.m5{padding-top:40px !important;padding-bottom:44px !important}
+    section .m7{padding-top:52px !important;padding-bottom:56px !important}
+    .m8{grid-template-columns:minmax(0,1fr) !important;column-gap:0 !important}
+    .m8.m9,.m8.m10{row-gap:28px !important}
+    .m8>:not(.m11):not(article){padding-left:0 !important;padding-right:0 !important;border-left:none !important}
+    .m8>.m12{border-right:none !important;border-bottom:1px solid #e5e7eb !important}
+    .m8>.m13{padding-top:44px !important;padding-bottom:36px !important}
+    .m8>.m14{padding-top:0 !important;padding-bottom:40px !important}
+    .m15,.m16{padding:24px 20px !important}
+    h1{font-size:clamp(32px,9vw,42px) !important;max-width:none !important}
+    h2.m17,h2.m18{font-size:26px !important}
+    p.m19{margin-left:0 !important}
+    .m20{flex-wrap:wrap;row-gap:10px}
+    .m21{row-gap:10px}
+    input,select,textarea{font-size:16px !important}
+    .m22{font-size:11px !important}
+    .m21.m23{flex-direction:column;align-items:flex-start !important;gap:8px !important}
+    .m24{flex-wrap:nowrap !important;overflow-x:auto;gap:22px !important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .m24>a{white-space:nowrap;flex:0 0 auto}
+    footer .m8{row-gap:32px !important}
+    .m8>.m25{padding-bottom:32px !important}
+    .m8>.e0{padding-top:32px !important}
+    h1{font-size:clamp(30px,8.4vw,40px) !important}
+    h1,h2,h3{hyphens:manual !important;-webkit-hyphens:manual !important}
+    p.m26,li.m26,div.m26:not(.m27){font-size:15px !important}
+    p.m28,li.m28{font-size:14px !important}
+    a.m27:not(.m29){display:inline-flex;align-items:center;min-height:44px}
+    footer p{font-size:15px !important}
+    footer .m30{gap:0 !important;font-size:15px !important}
+    footer .m30>a{display:flex;align-items:center;min-height:44px}
+    footer .m30>span{padding:8px 0;line-height:1.6}
+    footer .m31{width:44px !important;height:44px !important}
+    footer .m21.m32{flex-direction:column;gap:6px !important}
+    footer .m20{flex-wrap:wrap;column-gap:22px !important;row-gap:0 !important}
+    footer .m20>a{display:inline-flex;align-items:center;min-height:44px}
+    .m33{row-gap:12px !important}
+    input[type="checkbox"],input[type="radio"]{width:20px !important;height:20px !important;flex:0 0 auto}
+    label:has(>input[type="checkbox"]),label:has(>input[type="radio"]){min-height:44px;align-items:center !important}
+  }
 
 .h0:hover{border-bottom:1px solid #ee2a35 !important;color:#ffffff !important}
 .h1:hover{background:#ffffff !important;color:#ee2a35 !important}
@@ -41,22 +92,22 @@
 </style>
 </head>
 <body>
-<header style="display:flex;align-items:center;gap:24px;row-gap:12px;flex-wrap:wrap;padding:12px 40px;min-height:72px;border-bottom:1px solid rgba(255,255,255,0.18);background:#0a1e5c;position:sticky;top:0;z-index:20">
+<header style="display:flex;align-items:center;gap:24px;row-gap:12px;flex-wrap:wrap;padding:12px 40px;min-height:72px;border-bottom:1px solid rgba(255,255,255,0.18);background:#0a1e5c;position:sticky;top:0;z-index:20" class="m29 m32">
   <a href="/" style="display:flex;align-items:center;gap:12px;flex:0 0 auto">
     <img src="assets/img/FinTech-ceea217e.png" alt="FS | SF" style="height:34px;width:34px;object-fit:contain;display:block">
     <span style="font-family:'Playfair Display',Garamond,serif;font-size:19px;letter-spacing:0.01em;color:#ffffff;white-space:nowrap;display:flex;align-items:center;gap:9px"><span style="width:1.5px;height:19px;background:#ee2a35;display:block"></span><span>FS Search Fund</span></span>
   </a>
   <input type="checkbox" id="navToggle" class="nav-check">
-  <nav class="nav-links" style="display:flex;align-items:center;justify-content:center;gap:22px;row-gap:8px;flex-wrap:wrap;flex:1 1 300px;min-width:0">
-    <a href="/" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">Home</a>
-    <a href="/about" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">About</a>
-    <a href="/searchfund" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#ffffff;border-bottom:1px solid #ee2a35;padding-bottom:3px;transition:all 150ms ease-in-out">The Model</a>
-    <a href="/resources" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">Publications</a>
-    <a href="/news" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">News</a>
-    <a href="/contact" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">Contact</a>
+  <nav class="nav-links m32" style="display:flex;align-items:center;justify-content:center;gap:22px;row-gap:8px;flex-wrap:wrap;flex:1 1 300px;min-width:0">
+    <a href="/" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Home</a>
+    <a href="/about" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">About</a>
+    <a href="/searchfund" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#ffffff;border-bottom:1px solid #ee2a35;padding-bottom:3px;transition:all 150ms ease-in-out" class="m27 m29">The Model</a>
+    <a href="/resources" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Publications</a>
+    <a href="/news" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">News</a>
+    <a href="/contact" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Contact</a>
   </nav>
   <label for="navToggle" class="nav-toggle"><span style="display:flex;flex-direction:column;gap:3px"><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span></span><span>Menu</span></label>
-  <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" class="nav-cta h1" style="flex:0 0 auto;white-space:nowrap;background:#ee2a35;color:#ffffff;border:1px solid #ee2a35;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:11px 20px;transition:all 150ms ease-in-out">Apply to Join</a>
+  <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" class="nav-cta h1 m11 m27 m29" style="flex:0 0 auto;white-space:nowrap;background:#ee2a35;color:#ffffff;border:1px solid #ee2a35;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:11px 20px;transition:all 150ms ease-in-out">Apply to Join</a>
   <div class="nav-drawer">
     <a href="/">Home</a>
     <a href="/about">About</a>
@@ -69,74 +120,74 @@
 </header>
 
 <section style="border-bottom:1px solid #e5e7eb">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 44px">
-    <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#0a1e5c;display:flex;align-items:center;gap:10px;margin-bottom:22px"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>Education · The model</span></div>
-    <h1 style="font-size:clamp(32px,3.8vw,48px);line-height:1.08;letter-spacing:-0.02em;margin-bottom:22px;max-width:22ch">What is a search fund?</h1>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 44px" class="m1 m2 m5 m29">
+    <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#0a1e5c;display:flex;align-items:center;gap:10px;margin-bottom:22px" class="m27"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>Education · The model</span></div>
+    <h1 style="font-size:clamp(32px,3.8vw,48px);line-height:1.08;letter-spacing:-0.02em;margin-bottom:22px;max-width:22ch" class="m18">What is a search fund?</h1>
     <p style="font-size:16px;line-height:1.7;max-width:66ch;margin:0;color:#1f2937">A search fund is an investment vehicle through which an entrepreneur raises capital to find, acquire, and lead an existing company rather than found a new one. Investors underwrite the searcher's time and expenses during the search; once a target is identified, they fund the acquisition. The searcher becomes chief executive and compounds value over several years before an eventual sale.</p>
   </div>
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb;background:#fafafa">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">Four Stages</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">Raise <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400">&amp;</span> search · Acquire · Operate · Grow</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">Four Stages</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">Raise <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400">&amp;</span> search · Acquire · Operate · Grow</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #0a1e5c;background:#ffffff">
-      <div style="padding:26px 22px 28px;border-right:1px solid #e5e7eb">
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #0a1e5c;background:#ffffff" class="m0 m8">
+      <div style="padding:26px 22px 28px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">01</span></div>
         <h3 style="font-size:19px;line-height:1.25;margin-bottom:8px">Raise <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400">&amp;</span> Search</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch">Search capital is committed by a small investor group; 12–24 months are spent sourcing and screening targets.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch" class="m26">Search capital is committed by a small investor group; 12–24 months are spent sourcing and screening targets.</p>
       </div>
-      <div style="padding:26px 22px 28px;border-right:1px solid #e5e7eb">
+      <div style="padding:26px 22px 28px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">02</span></div>
         <h3 style="font-size:19px;line-height:1.25;margin-bottom:8px">Acquire</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch">Diligence, valuation, and structuring conclude in the purchase of a single, cash-generative company.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch" class="m26">Diligence, valuation, and structuring conclude in the purchase of a single, cash-generative company.</p>
       </div>
-      <div style="padding:26px 22px 28px;border-right:1px solid #e5e7eb">
+      <div style="padding:26px 22px 28px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">03</span></div>
         <h3 style="font-size:19px;line-height:1.25;margin-bottom:8px">Operate</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch">The searcher takes the CEO seat, retains the team, and holds the business steady through the transfer.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch" class="m26">The searcher takes the CEO seat, retains the team, and holds the business steady through the transfer.</p>
       </div>
-      <div style="padding:26px 22px 28px">
+      <div style="padding:26px 22px 28px" class="m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">04</span></div>
         <h3 style="font-size:19px;line-height:1.25;margin-bottom:8px">Grow</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch">Three to seven years of operating investment precede a sale or a long-term hold.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:34ch" class="m26">Three to seven years of operating investment precede a sale or a long-term hold.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">How the Landscape Divides</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">Three structures</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">How the Landscape Divides</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">Three structures</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #0a1e5c">
-      <div style="padding:26px 28px 28px 0;border-right:1px solid #e5e7eb">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Traditional · Partnered</div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #0a1e5c" class="m8">
+      <div style="padding:26px 28px 28px 0;border-right:1px solid #e5e7eb" class="m12 m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Traditional · Partnered</div>
         <h3 style="font-size:20px;line-height:1.2;margin-bottom:10px">Investor-backed search</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 16px;max-width:40ch">One or two searchers raise search capital from 10–15 private investors and family offices, funding salary and costs for a 24-month search. The same investors provide the acquisition equity.</p>
-        <div style="border-top:1px solid #e5e7eb;padding-top:12px;display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;color:#1f2937">
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 16px;max-width:40ch" class="m26">One or two searchers raise search capital from 10–15 private investors and family offices, funding salary and costs for a 24-month search. The same investors provide the acquisition equity.</p>
+        <div style="border-top:1px solid #e5e7eb;padding-top:12px;display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;color:#1f2937" class="m28 m29">
           <span><span style="color:#6b7280">Target EBITDA · </span>€0.5–2m</span>
           <span><span style="color:#6b7280">Searcher equity · </span>20–25%, vesting on tenure and return hurdles</span>
         </div>
       </div>
-      <div style="padding:26px 28px 28px;border-right:1px solid #e5e7eb">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Self-Funded</div>
+      <div style="padding:26px 28px 28px;border-right:1px solid #e5e7eb" class="m12 m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Self-Funded</div>
         <h3 style="font-size:20px;line-height:1.2;margin-bottom:10px">Search at own risk</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 16px;max-width:40ch">The searcher carries the search personally – own capital, bank debt such as KfW succession financing, or a flexible equity partner – and brings investors in only once a deal is signature-ready.</p>
-        <div style="border-top:1px solid #e5e7eb;padding-top:12px;display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;color:#1f2937">
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 16px;max-width:40ch" class="m26">The searcher carries the search personally – own capital, bank debt such as KfW succession financing, or a flexible equity partner – and brings investors in only once a deal is signature-ready.</p>
+        <div style="border-top:1px solid #e5e7eb;padding-top:12px;display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;color:#1f2937" class="m28 m29">
           <span><span style="color:#6b7280">Searcher equity · </span>50–80%</span>
           <span><span style="color:#6b7280">Trade-off · </span>Operating independence against full personal cost risk</span>
         </div>
       </div>
-      <div style="padding:26px 0 28px 28px">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Accelerator · Incubation</div>
+      <div style="padding:26px 0 28px 28px" class="m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Accelerator · Incubation</div>
         <h3 style="font-size:20px;line-height:1.2;margin-bottom:10px">Programme-based search</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 16px;max-width:40ch">Structured formats in which searchers are guided through sourcing, financing, and closing inside an existing platform – Novastone Capital Advisors among the established European examples.</p>
-        <div style="border-top:1px solid #e5e7eb;padding-top:12px;display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;color:#1f2937">
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 16px;max-width:40ch" class="m26">Structured formats in which searchers are guided through sourcing, financing, and closing inside an existing platform – Novastone Capital Advisors among the established European examples.</p>
+        <div style="border-top:1px solid #e5e7eb;padding-top:12px;display:flex;flex-direction:column;gap:7px;font-size:13px;line-height:1.5;color:#1f2937" class="m28 m29">
           <span><span style="color:#6b7280">Suits · </span>First-time searchers without an investor network</span>
           <span><span style="color:#6b7280">Horizon · </span>5–10 years, or long-term hold; exit to strategic buyers, larger PE funds, or recapitalisation</span>
         </div>
@@ -146,56 +197,56 @@
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb;background:#fafafa">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">The Evidence</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">Stanford GSB · IESE</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">The Evidence</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">Stanford GSB · IESE</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #0a1e5c;background:#ffffff">
-      <div style="padding:24px 22px 26px;border-right:1px solid #e5e7eb">
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #0a1e5c;background:#ffffff" class="m0 m8">
+      <div style="padding:24px 22px 26px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="font-family:'Playfair Display',Garamond,serif;font-size:34px;line-height:1;color:#0a1e5c;margin-bottom:10px">2.1–2.5×</div>
-        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch">Average capital multiple to investors across all funded search funds – including those that never acquire.</p>
+        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch" class="m26">Average capital multiple to investors across all funded search funds – including those that never acquire.</p>
       </div>
-      <div style="padding:24px 22px 26px;border-right:1px solid #e5e7eb">
+      <div style="padding:24px 22px 26px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="font-family:'Playfair Display',Garamond,serif;font-size:34px;line-height:1;color:#0a1e5c;margin-bottom:10px">4–6×</div>
-        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch">Return on invested equity where the searcher sells the company after the growth phase.</p>
+        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch" class="m26">Return on invested equity where the searcher sells the company after the growth phase.</p>
       </div>
-      <div style="padding:24px 22px 26px;border-right:1px solid #e5e7eb">
+      <div style="padding:24px 22px 26px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="font-family:'Playfair Display',Garamond,serif;font-size:34px;line-height:1;color:#0a1e5c;margin-bottom:10px">~70%</div>
-        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch">Of searchers find and successfully buy a company.</p>
+        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch" class="m26">Of searchers find and successfully buy a company.</p>
       </div>
-      <div style="padding:24px 22px 26px">
+      <div style="padding:24px 22px 26px" class="m29">
         <div style="font-family:'Playfair Display',Garamond,serif;font-size:34px;line-height:1;color:#0a1e5c;margin-bottom:10px">&lt;10%</div>
-        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch">Of acquired businesses suffer a total loss – a proven, profitable model runs from day one.</p>
+        <p style="font-size:14px;line-height:1.6;margin:0;max-width:32ch" class="m26">Of acquired businesses suffer a total loss – a proven, profitable model runs from day one.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">Why German Owners Want Searchers</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">KfW Nachfolgemonitor</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">Why German Owners Want Searchers</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">KfW Nachfolgemonitor</div>
     </div>
     <div style="display:flex;flex-direction:column;border-top:1px solid #0a1e5c">
-      <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:40px;padding:24px 0;border-bottom:1px solid #e5e7eb">
+      <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:40px;padding:24px 0;border-bottom:1px solid #e5e7eb" class="m8 m9 m29 m33">
         <div>
-          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px">01 · The succession gap</div>
+          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px" class="m27">01 · The succession gap</div>
           <div style="font-family:'Playfair Display',Garamond,serif;font-size:26px;color:#0a1e5c">500,000</div>
         </div>
         <p style="font-size:15px;line-height:1.7;margin:0;max-width:68ch">German companies face a generational handover by the end of 2026/27. More than 230,000 are searching urgently for an external successor because no one inside the family will take over.</p>
       </div>
-      <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:40px;padding:24px 0;border-bottom:1px solid #e5e7eb">
+      <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:40px;padding:24px 0;border-bottom:1px solid #e5e7eb" class="m8 m9 m29 m33">
         <div>
-          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px">02 · The market gap</div>
+          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px" class="m27">02 · The market gap</div>
           <div style="font-family:'Playfair Display',Garamond,serif;font-size:26px;color:#0a1e5c">Too small for PE</div>
         </div>
         <p style="font-size:15px;line-height:1.7;margin:0;max-width:68ch">Private equity funds above €150m cannot justify deals at €1–3m EBITDA. Fixed transaction costs of €300,000 and upwards consume a disproportionate share of the return, and equity tickets below €10m do not move a large fund's volume.</p>
       </div>
-      <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:40px;padding:24px 0">
+      <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:40px;padding:24px 0" class="m8 m9 m29 m33">
         <div>
-          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px">03 · The human factor</div>
+          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px" class="m27">03 · The human factor</div>
           <div style="font-family:'Playfair Display',Garamond,serif;font-size:26px;color:#0a1e5c">Successor, not buyer</div>
         </div>
         <p style="font-size:15px;line-height:1.7;margin:0;max-width:68ch">Many proprietors deliberately refuse to sell a life's work to a financial investor who may break it up or resell it after three years. A searcher negotiates as a future entrepreneur on equal terms, moves to the site, takes over personally as managing partner, and commits to continuing the business with respect for its staff and culture.</p>
@@ -205,34 +256,34 @@
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb;background:#fafafa">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">The DACH Ecosystem</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">Capital · Sectors</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:34px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">The DACH Ecosystem</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">Capital · Sectors</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px">
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px" class="m8 m10">
       <div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:14px">Specialist investors</div>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 18px;max-width:56ch">Dedicated search fund investors provide German searchers with both search and acquisition capital.</p>
-        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c">
-          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px"><span>Relay Investments</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase">USA · Global</span></li>
-          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px"><span>Ambit Partners</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase">UK · Europe</span></li>
-          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px"><span>Vonzeo Capital</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Europe</span></li>
-          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px"><span>Istria Capital</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Europe</span></li>
-          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;font-size:14px"><span>Novastone Capital Advisors</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Accelerator</span></li>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:14px" class="m27">Specialist investors</div>
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 18px;max-width:56ch" class="m26">Dedicated search fund investors provide German searchers with both search and acquisition capital.</p>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c" class="m29">
+          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px" class="m21 m26 m29"><span>Relay Investments</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase" class="m27">USA · Global</span></li>
+          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px" class="m21 m26 m29"><span>Ambit Partners</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase" class="m27">UK · Europe</span></li>
+          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px" class="m21 m26 m29"><span>Vonzeo Capital</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase" class="m27">Europe</span></li>
+          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px" class="m21 m26 m29"><span>Istria Capital</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase" class="m27">Europe</span></li>
+          <li style="display:flex;justify-content:space-between;gap:20px;padding:11px 0;font-size:14px" class="m21 m26 m29"><span>Novastone Capital Advisors</span><span style="color:#6b7280;font-size:12px;letter-spacing:0.1em;text-transform:uppercase" class="m27">Accelerator</span></li>
         </ul>
       </div>
       <div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:14px">Target sectors</div>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 18px;max-width:56ch">Defensive, high-margin B2B niches with recurring revenue and a transferable customer base.</p>
-        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c">
-          <li style="display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px"><span style="width:6px;height:6px;background:#0a1e5c;display:block;flex:0 0 auto"></span><span>Niche software – B2B SaaS and ERP</span></li>
-          <li style="display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px"><span style="width:6px;height:6px;background:#0a1e5c;display:block;flex:0 0 auto"></span><span>Industrial testing and laboratory services</span></li>
-          <li style="display:flex;gap:14px;align-items:baseline;padding:11px 0;font-size:14px"><span style="width:6px;height:6px;background:#0a1e5c;display:block;flex:0 0 auto"></span><span>Highly specialised manufacturing</span></li>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:14px" class="m27">Target sectors</div>
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 18px;max-width:56ch" class="m26">Defensive, high-margin B2B niches with recurring revenue and a transferable customer base.</p>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c" class="m29">
+          <li style="display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px" class="m23 m26 m29"><span style="width:6px;height:6px;background:#0a1e5c;display:block;flex:0 0 auto"></span><span>Niche software – B2B SaaS and ERP</span></li>
+          <li style="display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb;font-size:14px" class="m23 m26 m29"><span style="width:6px;height:6px;background:#0a1e5c;display:block;flex:0 0 auto"></span><span>Industrial testing and laboratory services</span></li>
+          <li style="display:flex;gap:14px;align-items:baseline;padding:11px 0;font-size:14px" class="m23 m26 m29"><span style="width:6px;height:6px;background:#0a1e5c;display:block;flex:0 0 auto"></span><span>Highly specialised manufacturing</span></li>
         </ul>
-        <div style="border:1px solid #e5e7eb;background:#ffffff;padding:18px 20px;margin-top:22px">
-          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px">Reference case</div>
-          <p style="font-size:14px;line-height:1.65;margin:0;max-width:52ch">Klingel Medical Metal – acquired and scaled by a former searcher, and the clearest German proof that the model transfers.</p>
+        <div style="border:1px solid #e5e7eb;background:#ffffff;padding:18px 20px;margin-top:22px" class="m11 m29">
+          <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:8px" class="m27">Reference case</div>
+          <p style="font-size:14px;line-height:1.65;margin:0;max-width:52ch" class="m26">Klingel Medical Metal – acquired and scaled by a former searcher, and the clearest German proof that the model transfers.</p>
         </div>
       </div>
     </div>
@@ -240,14 +291,14 @@
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))">
-    <div style="padding-right:40px;border-right:1px solid #e5e7eb">
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Perspective 01</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))" class="m1 m2 m5 m8 m29">
+    <div style="padding-right:40px;border-right:1px solid #e5e7eb" class="m12 m25 m29">
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Perspective 01</div>
       <h2 style="font-size:26px;line-height:1.2;margin-bottom:14px">Why it suits students</h2>
       <p style="font-size:15px;line-height:1.7;color:#1f2937;margin:0;max-width:58ch">ETA offers an earlier route to general management than either a start-up or a corporate career – and the acquired company is already established, profitable, and staffed. The downside risk sits far below that of founding from zero, while the equity upside remains entrepreneurial.</p>
     </div>
-    <div style="padding-left:40px">
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Perspective 02</div>
+    <div style="padding-left:40px" class="m29 e0">
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Perspective 02</div>
       <h2 style="font-size:26px;line-height:1.2;margin-bottom:14px">Why start in Germany</h2>
       <p style="font-size:15px;line-height:1.7;color:#1f2937;margin:0;max-width:58ch">The DACH region has a deep succession pipeline and comparatively few searchers competing for it. Early movers negotiate proprietary deals rather than auctions – which is precisely why we build the network now, ahead of the market.</p>
     </div>
@@ -255,32 +306,32 @@
 </section>
 
 <section style="background:#0a1e5c;color:#ffffff">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:48px;align-items:center">
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:48px;align-items:center" class="m1 m2 m5 m8 m10 m29">
     <div>
-      <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.65);display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>Next step</span></div>
-      <h2 style="font-size:clamp(26px,3vw,34px);line-height:1.15;color:#ffffff;margin-bottom:14px;max-width:28ch">Study the model with people already practising it.</h2>
+      <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.65);display:flex;align-items:center;gap:10px;margin-bottom:18px" class="m27"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>Next step</span></div>
+      <h2 style="font-size:clamp(26px,3vw,34px);line-height:1.15;color:#ffffff;margin-bottom:14px;max-width:28ch" class="m18">Study the model with people already practising it.</h2>
       <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,0.8);margin:0;max-width:58ch">Members work through live DACH succession cases alongside acting searchers, investors, and operators.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:12px">
-      <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" style="background:#ffffff;color:#0a1e5c;border:1px solid #ffffff;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:14px 22px;transition:all 150ms ease-in-out" class="h2">Apply to Join</a>
-      <a href="/resources" style="background:transparent;color:#ffffff;border:1px solid rgba(255,255,255,0.4);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:14px 22px;transition:all 150ms ease-in-out" class="h3">Read the Publications</a>
+      <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" style="background:#ffffff;color:#0a1e5c;border:1px solid #ffffff;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:14px 22px;transition:all 150ms ease-in-out" class="h2 m11 m27 m29">Apply to Join</a>
+      <a href="/resources" style="background:transparent;color:#ffffff;border:1px solid rgba(255,255,255,0.4);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:14px 22px;transition:all 150ms ease-in-out" class="h3 m11 m27 m29">Read the Publications</a>
     </div>
   </div>
 </section>
 
 <footer style="background:#0a1e5c;color:#ffffff;border-top:1px solid rgba(255,255,255,0.18)">
-  <div style="max-width:1240px;margin:0 auto;padding:44px 40px 20px;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,2fr) minmax(0,3fr);gap:40px">
+  <div style="max-width:1240px;margin:0 auto;padding:44px 40px 20px;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,2fr) minmax(0,3fr);gap:40px" class="m1 m2 m6 m8 m9 m29">
     <div>
       <img src="assets/img/FinTech-ceea217e.png" alt="FS | SF" style="height:34px;width:34px;object-fit:contain;display:block;margin-bottom:14px">
-      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.75);margin:0 0 18px;max-width:44ch">We educate, empower, and connect the next generation of entrepreneurial leaders to identify, acquire, and grow great businesses.</p>
+      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.75);margin:0 0 18px;max-width:44ch" class="m28">We educate, empower, and connect the next generation of entrepreneurial leaders to identify, acquire, and grow great businesses.</p>
       <div style="display:flex;gap:10px">
-        <a href="https://www.linkedin.com/company/fs-search-fund" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="LinkedIn" class="h4"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.96-3.06-1.96 0-2.26 1.45-2.26 2.96V21h-4z"></path></svg></a>
-        <a href="https://www.instagram.com/fs.searchfund/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="Instagram" class="h4"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.linkedin.com/company/fs-search-fund" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="LinkedIn" class="h4 m11 m31"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.96-3.06-1.96 0-2.26 1.45-2.26 2.96V21h-4z"></path></svg></a>
+        <a href="https://www.instagram.com/fs.searchfund/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="Instagram" class="h4 m11 m31"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
       </div>
     </div>
     <div>
-      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px">Navigate</div>
-      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px" class="m22 m27">Navigate</div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px" class="m28 m30">
         <a href="/about" style="color:rgba(255,255,255,0.85)" class="h5">About</a>
         <a href="/searchfund" style="color:rgba(255,255,255,0.85)" class="h5">The Model</a>
         <a href="/resources" style="color:rgba(255,255,255,0.85)" class="h5">Publications</a>
@@ -289,18 +340,18 @@
       </div>
     </div>
     <div>
-      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px">Quick Contact</div>
-      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.85)">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px" class="m22 m27">Quick Contact</div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.85)" class="m28 m30">
         <span>Mon – Fri: 8:00 am – 6:00 pm</span>
         <span>c/o Frankfurt School<br>Adickesallee 32-34, 60322<br>Frankfurt am Main, Germany</span>
         <a href="mailto:Info@fs-searchfund.com" style="color:rgba(255,255,255,0.85);transition:all 150ms ease-in-out" class="h5">Info@fs-searchfund.com</a>
       </div>
     </div>
   </div>
-  <div style="max-width:1240px;margin:0 auto;padding:0 40px 26px">
-    <div style="border-top:1px solid rgba(255,255,255,0.18);padding-top:16px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55)">
+  <div style="max-width:1240px;margin:0 auto;padding:0 40px 26px" class="m1 m2 m29">
+    <div style="border-top:1px solid rgba(255,255,255,0.18);padding-top:16px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55)" class="m21 m27 m29 m32">
       <span>© 2026 FS SearchFund · Independent student initiative</span>
-      <span style="display:flex;gap:18px"><a href="/imprint" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Imprint</a><a href="/privacy" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Privacy</a><a href="/cookies" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Cookies</a><a href="/accessibility" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Accessibility</a></span>
+      <span style="display:flex;gap:18px" class="m20"><a href="/imprint" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Imprint</a><a href="/privacy" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Privacy</a><a href="/cookies" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Cookies</a><a href="/accessibility" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Accessibility</a></span>
     </div>
   </div>
 </footer>

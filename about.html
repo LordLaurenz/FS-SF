@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>About – FS SearchFund</title>
 <meta name="description" content="Who we are, what we do and the board behind the FS SearchFund student initiative.">
 <link rel="canonical" href="https://fs-searchfund.com/about">
@@ -10,6 +10,7 @@
 <meta property="og:title" content="About – FS SearchFund">
 <meta property="og:description" content="Who we are, what we do and the board behind the FS SearchFund student initiative.">
 <meta property="og:url" content="https://fs-searchfund.com/about">
+<meta name="theme-color" content="#0a1e5c">
 <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
@@ -31,6 +32,56 @@
     .nav-toggle{display:flex}
     .nav-check:checked ~ .nav-drawer{display:flex}
   }
+  html,body{overflow-x:hidden;max-width:100%}
+  @supports (overflow:clip){html,body{overflow-x:clip}}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  img,svg{max-width:100%}
+  h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+  @media (max-width:1060px){
+    .m0{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  }
+  @media (max-width:760px){
+    header{padding:10px 20px !important;min-height:64px !important}
+    .m1.m2,.m3.m2,.m4.m2{padding-left:20px !important;padding-right:20px !important}
+    section .m1.m5,section .m1.m6,section .m3.m6,section .m3.m5{padding-top:40px !important;padding-bottom:44px !important}
+    section .m7{padding-top:52px !important;padding-bottom:56px !important}
+    .m8{grid-template-columns:minmax(0,1fr) !important;column-gap:0 !important}
+    .m8.m9,.m8.m10{row-gap:28px !important}
+    .m8>:not(.m11):not(article){padding-left:0 !important;padding-right:0 !important;border-left:none !important}
+    .m8>.m12{border-right:none !important;border-bottom:1px solid #e5e7eb !important}
+    .m8>.m13{padding-top:44px !important;padding-bottom:36px !important}
+    .m8>.m14{padding-top:0 !important;padding-bottom:40px !important}
+    .m15,.m16{padding:24px 20px !important}
+    h1{font-size:clamp(32px,9vw,42px) !important;max-width:none !important}
+    h2.m17,h2.m18{font-size:26px !important}
+    p.m19{margin-left:0 !important}
+    .m20{flex-wrap:wrap;row-gap:10px}
+    .m21{row-gap:10px}
+    input,select,textarea{font-size:16px !important}
+    .m22{font-size:11px !important}
+    .m21.m23{flex-direction:column;align-items:flex-start !important;gap:8px !important}
+    .m24{flex-wrap:nowrap !important;overflow-x:auto;gap:22px !important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .m24>a{white-space:nowrap;flex:0 0 auto}
+    footer .m8{row-gap:32px !important}
+    .m8>.m25{padding-bottom:32px !important}
+    .m8>.e0{padding-top:32px !important}
+    h1{font-size:clamp(30px,8.4vw,40px) !important}
+    h1,h2,h3{hyphens:manual !important;-webkit-hyphens:manual !important}
+    p.m26,li.m26,div.m26:not(.m27){font-size:15px !important}
+    p.m28,li.m28{font-size:14px !important}
+    a.m27:not(.m29){display:inline-flex;align-items:center;min-height:44px}
+    footer p{font-size:15px !important}
+    footer .m30{gap:0 !important;font-size:15px !important}
+    footer .m30>a{display:flex;align-items:center;min-height:44px}
+    footer .m30>span{padding:8px 0;line-height:1.6}
+    footer .m31{width:44px !important;height:44px !important}
+    footer .m21.m32{flex-direction:column;gap:6px !important}
+    footer .m20{flex-wrap:wrap;column-gap:22px !important;row-gap:0 !important}
+    footer .m20>a{display:inline-flex;align-items:center;min-height:44px}
+    .m33{row-gap:12px !important}
+    input[type="checkbox"],input[type="radio"]{width:20px !important;height:20px !important;flex:0 0 auto}
+    label:has(>input[type="checkbox"]),label:has(>input[type="radio"]){min-height:44px;align-items:center !important}
+  }
 
 .h0:hover{border-bottom:1px solid #ee2a35 !important;color:#ffffff !important}
 .h1:hover{background:#ffffff !important;color:#ee2a35 !important}
@@ -41,22 +92,22 @@
 </style>
 </head>
 <body>
-<header style="display:flex;align-items:center;gap:24px;row-gap:12px;flex-wrap:wrap;padding:12px 40px;min-height:72px;border-bottom:1px solid rgba(255,255,255,0.18);background:#0a1e5c;position:sticky;top:0;z-index:20">
+<header style="display:flex;align-items:center;gap:24px;row-gap:12px;flex-wrap:wrap;padding:12px 40px;min-height:72px;border-bottom:1px solid rgba(255,255,255,0.18);background:#0a1e5c;position:sticky;top:0;z-index:20" class="m29 m32">
   <a href="/" style="display:flex;align-items:center;gap:12px;flex:0 0 auto">
     <img src="assets/img/FinTech-ceea217e.png" alt="FS | SF" style="height:34px;width:34px;object-fit:contain;display:block">
     <span style="font-family:'Playfair Display',Garamond,serif;font-size:19px;letter-spacing:0.01em;color:#ffffff;white-space:nowrap;display:flex;align-items:center;gap:9px"><span style="width:1.5px;height:19px;background:#ee2a35;display:block"></span><span>FS Search Fund</span></span>
   </a>
   <input type="checkbox" id="navToggle" class="nav-check">
-  <nav class="nav-links" style="display:flex;align-items:center;justify-content:center;gap:22px;row-gap:8px;flex-wrap:wrap;flex:1 1 300px;min-width:0">
-    <a href="/" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">Home</a>
-    <a href="/about" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#ffffff;border-bottom:1px solid #ee2a35;padding-bottom:3px;transition:all 150ms ease-in-out">About</a>
-    <a href="/searchfund" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">The Model</a>
-    <a href="/resources" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">Publications</a>
-    <a href="/news" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">News</a>
-    <a href="/contact" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0">Contact</a>
+  <nav class="nav-links m32" style="display:flex;align-items:center;justify-content:center;gap:22px;row-gap:8px;flex-wrap:wrap;flex:1 1 300px;min-width:0">
+    <a href="/" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Home</a>
+    <a href="/about" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#ffffff;border-bottom:1px solid #ee2a35;padding-bottom:3px;transition:all 150ms ease-in-out" class="m27 m29">About</a>
+    <a href="/searchfund" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">The Model</a>
+    <a href="/resources" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Publications</a>
+    <a href="/news" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">News</a>
+    <a href="/contact" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Contact</a>
   </nav>
   <label for="navToggle" class="nav-toggle"><span style="display:flex;flex-direction:column;gap:3px"><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span></span><span>Menu</span></label>
-  <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" class="nav-cta h1" style="flex:0 0 auto;white-space:nowrap;background:#ee2a35;color:#ffffff;border:1px solid #ee2a35;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:11px 20px;transition:all 150ms ease-in-out">Apply to Join</a>
+  <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" class="nav-cta h1 m11 m27 m29" style="flex:0 0 auto;white-space:nowrap;background:#ee2a35;color:#ffffff;border:1px solid #ee2a35;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:11px 20px;transition:all 150ms ease-in-out">Apply to Join</a>
   <div class="nav-drawer">
     <a href="/">Home</a>
     <a href="/about">About</a>
@@ -71,22 +122,22 @@
 <section style="position:relative;background:#0a1e5c;border-bottom:1px solid #e5e7eb">
   <img src="assets/img/pexels-eddson-lens-748406628-27863504.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.5;filter:grayscale(0.45)">
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,92,0.92) 0%,rgba(10,30,92,0.78) 55%,rgba(10,30,92,0.55) 100%)"></div>
-  <div style="position:relative;max-width:1240px;margin:0 auto;padding:78px 40px 82px">
-    <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:10px;margin-bottom:22px"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>About the club · Section 01</span></div>
-    <h1 style="font-size:clamp(34px,4.2vw,54px);line-height:1.06;letter-spacing:-0.02em;color:#ffffff;margin-bottom:22px;max-width:22ch">A student institution for entrepreneurship through acquisition.</h1>
+  <div style="position:relative;max-width:1240px;margin:0 auto;padding:78px 40px 82px" class="m1 m2 m7 m29">
+    <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:10px;margin-bottom:22px" class="m27"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>About the club · Section 01</span></div>
+    <h1 style="font-size:clamp(34px,4.2vw,54px);line-height:1.06;letter-spacing:-0.02em;color:#ffffff;margin-bottom:22px;max-width:22ch" class="m18">A student institution for entrepreneurship through acquisition.</h1>
     <p style="font-size:16px;line-height:1.75;max-width:66ch;margin:0;color:rgba(255,255,255,0.85)">FS SearchFund was founded in 2026 by students at Frankfurt School to give them a rigorous grounding in the search fund model and in the succession dynamics of the German, Austrian, and Swiss Mittelstand. We prepare members to find, acquire, and lead established companies – and connect them with the owners, investors, and operators who make that possible.</p>
   </div>
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb;background:#fafafa">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0">
-    <div style="padding-right:40px;border-right:1px solid #e5e7eb">
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Focus area 01</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0" class="m1 m2 m5 m8 m29">
+    <div style="padding-right:40px;border-right:1px solid #e5e7eb" class="m12 m25 m29">
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Focus area 01</div>
       <h2 style="font-size:26px;line-height:1.2;margin-bottom:14px">Entrepreneurship through Acquisition</h2>
       <p style="font-size:15px;line-height:1.7;color:#1f2937;margin:0;max-width:58ch">ETA describes a path in which an individual raises capital to acquire one company and then leads it as chief executive. We teach the mechanics that underpin it: search capital, proprietary sourcing, valuation and structuring, and the first hundred days after closing.</p>
     </div>
-    <div style="padding-left:40px">
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Focus area 02</div>
+    <div style="padding-left:40px" class="m29 e0">
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Focus area 02</div>
       <h2 style="font-size:26px;line-height:1.2;margin-bottom:14px">Succession in the Mittelstand</h2>
       <p style="font-size:15px;line-height:1.7;color:#1f2937;margin:0;max-width:58ch">A substantial share of DACH family businesses will change hands within the decade, many without an internal successor. We study how the search fund model can secure continuity of employment, culture, and regional strength – and build the relationships that make such transactions possible.</p>
     </div>
@@ -94,87 +145,87 @@
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:32px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">Mandate</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">Section 02</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:32px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">Mandate</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">Section 02</div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #0a1e5c">
-      <div style="padding:26px 28px 28px 0;border-right:1px solid #e5e7eb">
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #0a1e5c" class="m8">
+      <div style="padding:26px 28px 28px 0;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">01</span></div>
         <h3 style="font-size:20px;line-height:1.2;margin-bottom:8px">Educate</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:38ch">Seminars, reading groups, and case work on search funds and Mittelstand transactions.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:38ch" class="m26">Seminars, reading groups, and case work on search funds and Mittelstand transactions.</p>
       </div>
-      <div style="padding:26px 28px 28px;border-right:1px solid #e5e7eb">
+      <div style="padding:26px 28px 28px;border-right:1px solid #e5e7eb" class="m12 m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">02</span></div>
         <h3 style="font-size:20px;line-height:1.2;margin-bottom:8px">Empower</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:38ch">Mentorship from acting searchers and simulated deal work that builds real capability.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:38ch" class="m26">Mentorship from acting searchers and simulated deal work that builds real capability.</p>
       </div>
-      <div style="padding:26px 0 28px 28px">
+      <div style="padding:26px 0 28px 28px" class="m29">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="width:5px;height:5px;background:#ee2a35;display:block"></span><span style="font-family:'Playfair Display',Garamond,serif;font-size:20px;color:#0a1e5c">03</span></div>
         <h3 style="font-size:20px;line-height:1.2;margin-bottom:8px">Connect</h3>
-        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:38ch">A standing bridge between students, business owners, and the DACH investor community.</p>
+        <p style="font-size:14px;line-height:1.65;color:#1f2937;margin:0;max-width:38ch" class="m26">A standing bridge between students, business owners, and the DACH investor community.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section style="border-bottom:1px solid #e5e7eb;background:#fafafa">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:32px;flex-wrap:wrap">
-      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em">Programme</h2>
-      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280">Section 03</div>
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px 56px" class="m1 m2 m5 m29">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:32px;border-bottom:1px solid #e5e7eb;padding-bottom:14px;margin-bottom:32px;flex-wrap:wrap" class="m21 m23 m29 m32">
+      <h2 style="font-size:30px;line-height:1.15;letter-spacing:-0.01em" class="m17">Programme</h2>
+      <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b7280" class="m27">Section 03</div>
     </div>
     <p style="font-size:15px;line-height:1.7;color:#1f2937;margin:0 0 30px;max-width:72ch">Four recurring formats across the term. Each one moves members a step closer to being taken seriously in a room of searchers, owners, and investors.</p>
-    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
-      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Networking · Evening format</div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px" class="m8">
+      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2 m11 m15 m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Networking · Evening format</div>
         <h3 style="font-size:23px;line-height:1.2;margin-bottom:12px">Fireside Chats</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch">An acting search fund entrepreneur and an investor from the same side of the table, in a small room with a limited number of seats.</p>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #0a1e5c">
-          <div style="padding:14px 14px 16px 0;border-right:1px solid #e5e7eb">
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch" class="m26">An acting search fund entrepreneur and an investor from the same side of the table, in a small room with a limited number of seats.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #0a1e5c" class="m8">
+          <div style="padding:14px 14px 16px 0;border-right:1px solid #e5e7eb" class="m12 m29">
             <div style="font-family:'Playfair Display',Garamond,serif;font-size:18px;color:#0a1e5c;margin-bottom:6px">⅓</div>
-            <div style="font-size:13px;line-height:1.55;color:#1f2937">Structured questions, prepared by members</div>
+            <div style="font-size:13px;line-height:1.55;color:#1f2937" class="m28">Structured questions, prepared by members</div>
           </div>
-          <div style="padding:14px;border-right:1px solid #e5e7eb">
+          <div style="padding:14px;border-right:1px solid #e5e7eb" class="m12 m29">
             <div style="font-family:'Playfair Display',Garamond,serif;font-size:18px;color:#0a1e5c;margin-bottom:6px">⅓</div>
-            <div style="font-size:13px;line-height:1.55;color:#1f2937">Open floor, nothing rehearsed</div>
+            <div style="font-size:13px;line-height:1.55;color:#1f2937" class="m28">Open floor, nothing rehearsed</div>
           </div>
-          <div style="padding:14px 0 16px 14px">
+          <div style="padding:14px 0 16px 14px" class="m29">
             <div style="font-family:'Playfair Display',Garamond,serif;font-size:18px;color:#0a1e5c;margin-bottom:6px">⅓</div>
-            <div style="font-size:13px;line-height:1.55;color:#1f2937">Drinks, and the conversations that follow</div>
+            <div style="font-size:13px;line-height:1.55;color:#1f2937" class="m28">Drinks, and the conversations that follow</div>
           </div>
         </div>
       </div>
-      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Education · Term series</div>
+      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2 m11 m15 m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Education · Term series</div>
         <h3 style="font-size:23px;line-height:1.2;margin-bottom:12px">Search Fund Essentials</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch">The working craft behind a transaction, taught in the order a searcher meets it.</p>
-        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c">
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">01</span><span style="font-size:14px;line-height:1.55">Finding and reading companies in the market data</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">02</span><span style="font-size:14px;line-height:1.55">How an acquisition runs, from first contact to signing</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">03</span><span style="font-size:14px;line-height:1.55">Putting a defensible number on a business</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">04</span><span style="font-size:14px;line-height:1.55">Building the deck, and holding the room while you present it</span></li>
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch" class="m26">The working craft behind a transaction, taught in the order a searcher meets it.</p>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c" class="m29">
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">01</span><span style="font-size:14px;line-height:1.55" class="m26">Finding and reading companies in the market data</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">02</span><span style="font-size:14px;line-height:1.55" class="m26">How an acquisition runs, from first contact to signing</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">03</span><span style="font-size:14px;line-height:1.55" class="m26">Putting a defensible number on a business</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">04</span><span style="font-size:14px;line-height:1.55" class="m26">Building the deck, and holding the room while you present it</span></li>
         </ul>
       </div>
-      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Workshop · Every two months</div>
+      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2 m11 m15 m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Workshop · Every two months</div>
         <h3 style="font-size:23px;line-height:1.2;margin-bottom:12px">Searcher Pitch Competition</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch">Members work in small searcher teams across the term. Every second month each team puts its target thesis in front of the room and defends it.</p>
-        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c">
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">01</span><span style="font-size:14px;line-height:1.55">A company found, and the case for buying it</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">02</span><span style="font-size:14px;line-height:1.55">A number you are willing to defend</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">03</span><span style="font-size:14px;line-height:1.55">Questions from guests who have made the same argument to real investors</span></li>
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch" class="m26">Members work in small searcher teams across the term. Every second month each team puts its target thesis in front of the room and defends it.</p>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c" class="m29">
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">01</span><span style="font-size:14px;line-height:1.55" class="m26">A company found, and the case for buying it</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">02</span><span style="font-size:14px;line-height:1.55" class="m26">A number you are willing to defend</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">03</span><span style="font-size:14px;line-height:1.55" class="m26">Questions from guests who have made the same argument to real investors</span></li>
         </ul>
       </div>
-      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2">
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px">Education · Guest lecture</div>
+      <div style="background:#ffffff;border:1px solid #e5e7eb;padding:30px 32px 32px;transition:all 150ms ease-in-out" class="h2 m11 m15 m29">
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ee2a35;margin-bottom:12px" class="m27">Education · Guest lecture</div>
         <h3 style="font-size:23px;line-height:1.2;margin-bottom:12px">Deal Walkthroughs</h3>
-        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch">A completed transaction taken apart step by step with the people who were in it – including the parts that nearly went wrong.</p>
-        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c">
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">01</span><span style="font-size:14px;line-height:1.55">The deal retraced with the people who were in it</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">02</span><span style="font-size:14px;line-height:1.55">Written up afterwards as a short member report</span></li>
-          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">03</span><span style="font-size:14px;line-height:1.55">Extended by our own surveys of searchers on what is currently hard</span></li>
+        <p style="font-size:14px;line-height:1.7;color:#1f2937;margin:0 0 20px;max-width:52ch" class="m26">A completed transaction taken apart step by step with the people who were in it – including the parts that nearly went wrong.</p>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #0a1e5c" class="m29">
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">01</span><span style="font-size:14px;line-height:1.55" class="m26">The deal retraced with the people who were in it</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid #e5e7eb" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">02</span><span style="font-size:14px;line-height:1.55" class="m26">Written up afterwards as a short member report</span></li>
+          <li style="display:flex;gap:16px;align-items:baseline;padding:11px 0" class="m23 m29"><span style="font-size:11px;letter-spacing:0.14em;color:#6b7280;flex:0 0 26px">03</span><span style="font-size:14px;line-height:1.55" class="m26">Extended by our own surveys of searchers on what is currently hard</span></li>
         </ul>
       </div>
     </div>
@@ -182,31 +233,31 @@
 </section>
 
 <section style="background:#0a1e5c;color:#ffffff">
-  <div style="max-width:1240px;margin:0 auto;padding:52px 40px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:48px;align-items:center">
+  <div style="max-width:1240px;margin:0 auto;padding:52px 40px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:48px;align-items:center" class="m1 m2 m5 m8 m10 m29">
     <div>
-      <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.65);display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>Membership 2026</span></div>
-      <h2 style="font-size:clamp(26px,3vw,34px);line-height:1.15;color:#ffffff;margin-bottom:14px;max-width:26ch">Be part of the founding cohort.</h2>
+      <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.65);display:flex;align-items:center;gap:10px;margin-bottom:18px" class="m27"><span style="width:1.5px;height:12px;background:#ee2a35;display:block"></span><span>Membership 2026</span></div>
+      <h2 style="font-size:clamp(26px,3vw,34px);line-height:1.15;color:#ffffff;margin-bottom:14px;max-width:26ch" class="m18">Be part of the founding cohort.</h2>
       <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,0.8);margin:0;max-width:58ch">The club is being built from the ground up. Membership is open to all Frankfurt School students, across programmes and years.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:12px">
-      <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" style="background:#ffffff;color:#0a1e5c;border:1px solid #ffffff;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:14px 22px;transition:all 150ms ease-in-out" class="h3">Apply to Join</a>
+      <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" style="background:#ffffff;color:#0a1e5c;border:1px solid #ffffff;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:14px 22px;transition:all 150ms ease-in-out" class="h3 m11 m27 m29">Apply to Join</a>
     </div>
   </div>
 </section>
 
 <footer style="background:#0a1e5c;color:#ffffff;border-top:1px solid rgba(255,255,255,0.18)">
-  <div style="max-width:1240px;margin:0 auto;padding:44px 40px 20px;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,2fr) minmax(0,3fr);gap:40px">
+  <div style="max-width:1240px;margin:0 auto;padding:44px 40px 20px;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,2fr) minmax(0,3fr);gap:40px" class="m1 m2 m6 m8 m9 m29">
     <div>
       <img src="assets/img/FinTech-ceea217e.png" alt="FS | SF" style="height:34px;width:34px;object-fit:contain;display:block;margin-bottom:14px">
-      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.75);margin:0 0 18px;max-width:44ch">We educate, empower, and connect the next generation of entrepreneurial leaders to identify, acquire, and grow great businesses.</p>
+      <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.75);margin:0 0 18px;max-width:44ch" class="m28">We educate, empower, and connect the next generation of entrepreneurial leaders to identify, acquire, and grow great businesses.</p>
       <div style="display:flex;gap:10px">
-        <a href="https://www.linkedin.com/company/fs-search-fund" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="LinkedIn" class="h4"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.96-3.06-1.96 0-2.26 1.45-2.26 2.96V21h-4z"></path></svg></a>
-        <a href="https://www.instagram.com/fs.searchfund/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="Instagram" class="h4"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.linkedin.com/company/fs-search-fund" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="LinkedIn" class="h4 m11 m31"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.96-3.06-1.96 0-2.26 1.45-2.26 2.96V21h-4z"></path></svg></a>
+        <a href="https://www.instagram.com/fs.searchfund/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid rgba(255,255,255,0.35);color:#ffffff;transition:all 150ms ease-in-out" aria-label="Instagram" class="h4 m11 m31"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"></circle></svg></a>
       </div>
     </div>
     <div>
-      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px">Navigate</div>
-      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px" class="m22 m27">Navigate</div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px" class="m28 m30">
         <a href="/about" style="color:rgba(255,255,255,0.85)" class="h5">About</a>
         <a href="/searchfund" style="color:rgba(255,255,255,0.85)" class="h5">The Model</a>
         <a href="/resources" style="color:rgba(255,255,255,0.85)" class="h5">Publications</a>
@@ -215,18 +266,18 @@
       </div>
     </div>
     <div>
-      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px">Quick Contact</div>
-      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.85)">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:14px" class="m22 m27">Quick Contact</div>
+      <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.85)" class="m28 m30">
         <span>Mon – Fri: 8:00 am – 6:00 pm</span>
         <span>c/o Frankfurt School<br>Adickesallee 32-34, 60322<br>Frankfurt am Main, Germany</span>
         <a href="mailto:Info@fs-searchfund.com" style="color:rgba(255,255,255,0.85);transition:all 150ms ease-in-out" class="h5">Info@fs-searchfund.com</a>
       </div>
     </div>
   </div>
-  <div style="max-width:1240px;margin:0 auto;padding:0 40px 26px">
-    <div style="border-top:1px solid rgba(255,255,255,0.18);padding-top:16px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55)">
+  <div style="max-width:1240px;margin:0 auto;padding:0 40px 26px" class="m1 m2 m29">
+    <div style="border-top:1px solid rgba(255,255,255,0.18);padding-top:16px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55)" class="m21 m27 m29 m32">
       <span>© 2026 FS SearchFund · Independent student initiative</span>
-      <span style="display:flex;gap:18px"><a href="/imprint" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Imprint</a><a href="/privacy" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Privacy</a><a href="/cookies" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Cookies</a><a href="/accessibility" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Accessibility</a></span>
+      <span style="display:flex;gap:18px" class="m20"><a href="/imprint" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Imprint</a><a href="/privacy" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Privacy</a><a href="/cookies" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Cookies</a><a href="/accessibility" style="color:rgba(255,255,255,0.55);transition:all 150ms ease-in-out" class="h5">Accessibility</a></span>
     </div>
   </div>
 </footer>
