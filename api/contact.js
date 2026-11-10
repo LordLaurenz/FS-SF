@@ -96,7 +96,7 @@ module.exports = async (req, res) => {
       },
       body: JSON.stringify({
         sender: { name: 'FS SearchFund Website', email: (process.env.MAIL_FROM || process.env.SMTP_FROM || '').trim() },
-        to: [{ email: (process.env.MAIL_TO || 'Info@fs-searchfund.com').trim() }],
+        to: (process.env.MAIL_TO || 'Info@fs-searchfund.com').split(',').map(e => e.trim()).filter(Boolean).map(email => ({ email })),
         replyTo: { email: d.email, name: (d.firstName + ' ' + d.lastName).slice(0, 200) },
         subject: 'Website enquiry: ' + d.firstName + ' ' + d.lastName + ' (' + BACKGROUNDS[d.background] + ')',
         textContent: text,
