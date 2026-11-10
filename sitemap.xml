@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://fs-searchfund.com/</loc></url>
-  <url><loc>https://fs-searchfund.com/about</loc></url>
-  <url><loc>https://fs-searchfund.com/searchfund</loc></url>
-  <url><loc>https://fs-searchfund.com/resources</loc></url>
-  <url><loc>https://fs-searchfund.com/news</loc></url>
-  <url><loc>https://fs-searchfund.com/contact</loc></url>
-  <url><loc>https://fs-searchfund.com/imprint</loc></url>
-  <url><loc>https://fs-searchfund.com/privacy</loc></url>
-  <url><loc>https://fs-searchfund.com/cookies</loc></url>
-  <url><loc>https://fs-searchfund.com/accessibility</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://fs-searchfund.com/</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/"/></url>
+  <url><loc>https://fs-searchfund.com/de/</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/"/></url>
+  <url><loc>https://fs-searchfund.com/about</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/about"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/about"/></url>
+  <url><loc>https://fs-searchfund.com/de/about</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/about"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/about"/></url>
+  <url><loc>https://fs-searchfund.com/searchfund</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/searchfund"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/searchfund"/></url>
+  <url><loc>https://fs-searchfund.com/de/searchfund</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/searchfund"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/searchfund"/></url>
+  <url><loc>https://fs-searchfund.com/resources</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/resources"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/resources"/></url>
+  <url><loc>https://fs-searchfund.com/de/resources</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/resources"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/resources"/></url>
+  <url><loc>https://fs-searchfund.com/news</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/news"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/news"/></url>
+  <url><loc>https://fs-searchfund.com/de/news</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/news"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/news"/></url>
+  <url><loc>https://fs-searchfund.com/contact</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/contact"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/contact"/></url>
+  <url><loc>https://fs-searchfund.com/de/contact</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/contact"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/contact"/></url>
+  <url><loc>https://fs-searchfund.com/imprint</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/imprint"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/imprint"/></url>
+  <url><loc>https://fs-searchfund.com/de/imprint</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/imprint"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/imprint"/></url>
+  <url><loc>https://fs-searchfund.com/privacy</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/privacy"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/privacy"/></url>
+  <url><loc>https://fs-searchfund.com/de/privacy</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/privacy"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/privacy"/></url>
+  <url><loc>https://fs-searchfund.com/cookies</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/cookies"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/cookies"/></url>
+  <url><loc>https://fs-searchfund.com/de/cookies</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/cookies"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/cookies"/></url>
+  <url><loc>https://fs-searchfund.com/accessibility</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/accessibility"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/accessibility"/></url>
+  <url><loc>https://fs-searchfund.com/de/accessibility</loc><xhtml:link rel="alternate" hreflang="en" href="https://fs-searchfund.com/accessibility"/><xhtml:link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/accessibility"/></url>
 </urlset>

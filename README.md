@@ -1,24 +1,31 @@
 # FS SearchFund – Website
 
-Statisches HTML + eine Vercel-Funktion (`/api/contact`), die das Kontaktformular als JSON annimmt und per SMTP (Gmail, kostenlos) an `Info@fs-searchfund.com` (Weiterleitung via ImprovMX Free) schickt.
+Statisches HTML (Englisch + Deutsch) und eine Vercel-Funktion (`/api/contact`), die das Kontaktformular über die **Brevo-API** an `Info@fs-searchfund.com` schickt.
 
 ## Struktur
-- `index.html`, `about.html`, … – die Seiten (URLs ohne `.html`, z. B. `/about`)
-- `assets/` – Schrift (lokal, kein Google-Server), Bilder, `contact.js`
-- `api/contact.js` – Backend fürs Formular (Honeypot, Rate-Limit, Validierung)
+- `index.html`, `about.html`, … – englische Seiten (URLs ohne `.html`, z. B. `/about`)
+- `de/` – deutsche Seiten unter denselben Namen (`/de/`, `/de/about`, …); Umschalter EN / DE oben im Header
+- `assets/` – Schrift (lokal), Bilder, `contact.js` (Formular, sprachunabhängig)
+- `api/contact.js` – Backend fürs Formular (Honeypot, Rate-Limit, Validierung, Versand über Brevo)
 - `vercel.json` – saubere URLs, Region Frankfurt (`fra1`), Security-Header
 
-## Deployment
-1. Inhalt dieses Ordners als Root ins GitHub-Repository hochladen.
-2. Vercel → *Add New Project* → Repository wählen. Framework Preset: **Other**, Build Command leer lassen.
-3. *Settings → Environment Variables* – Werte aus `.env.example` eintragen:
-   - `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=465`, `SMTP_USER`/`SMTP_FROM` = deine Gmail-Adresse, `SMTP_PASS` = Google-App-Passwort (myaccount.google.com/apppasswords, 2FA nötig)
-   - `MAIL_TO` – Empfänger (Standard: Info@fs-searchfund.com)
-   - `ALLOWED_ORIGIN` – `https://fs-searchfund.com`
-4. Redeploy, dann *Settings → Domains* → `fs-searchfund.com` verbinden (DNS-Einträge beim Domain-Anbieter setzen, wie Vercel sie anzeigt).
-5. Testen: Formular auf `/contact` absenden → Mail muss ankommen; „Antworten“ geht direkt an den Absender.
+## Umgebungsvariablen (Vercel → Settings → Environment Variables)
+| Variable | Wert |
+|---|---|
+| `BREVO_API_KEY` | Brevo → Einstellungen → SMTP & API → „API- und MCP-Schlüssel“ (beginnt mit `xkeysib-`) |
+| `MAIL_FROM` | in Brevo verifizierter Absender, z. B. `fssearchfund@gmail.com` |
+| `MAIL_TO` | Empfänger, z. B. `Info@fs-searchfund.com` |
+| `ALLOWED_ORIGIN` | `https://fs-searchfund.com` |
 
-## Vor dem Launch
-- c/o-Genehmigung der Frankfurt School liegt vor (Imprint/Privacy).
-- Markennutzung „FS“ mit der Hochschule klären.
-- Domain in `sitemap.xml`, `robots.txt` und den `canonical`-Tags prüfen, falls sie nicht `fs-searchfund.com` ist.
+Die alten `SMTP_*`-Variablen werden nicht mehr gebraucht und können gelöscht werden.
+
+**Wichtig in Brevo:** Einstellungen → Sicherheit → Autorisierte IPs → Sperre für API-Schlüssel **aus** (Vercel sendet von wechselnden IPs).
+
+## Fehlersuche
+Vercel → Logs → Eintrag `/api/contact`. Bei Problemen steht dort `Brevo error: <Status> <Antwort>`.
+- `401` → API-Schlüssel falsch
+- `400` mit „sender“ → `MAIL_FROM` ist in Brevo nicht als Absender verifiziert
+- `403` / „unrecognised IP“ → IP-Sperre in Brevo ausschalten
+
+## Texte ändern
+Englische und deutsche Seiten sind getrennte Dateien – eine Textänderung bitte in beiden Versionen vornehmen.

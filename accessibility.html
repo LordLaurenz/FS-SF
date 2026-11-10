@@ -6,6 +6,9 @@
 <title>Accessibility – FS SearchFund</title>
 <meta name="description" content="Accessibility statement for the FS SearchFund website.">
 <link rel="canonical" href="https://fs-searchfund.com/accessibility">
+<link rel="alternate" hreflang="en" href="https://fs-searchfund.com/accessibility">
+<link rel="alternate" hreflang="de" href="https://fs-searchfund.com/de/accessibility">
+<link rel="alternate" hreflang="x-default" href="https://fs-searchfund.com/accessibility">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Accessibility – FS SearchFund">
 <meta property="og:description" content="Accessibility statement for the FS SearchFund website.">
@@ -88,6 +91,15 @@
 .h2:hover{color:#0a1e5c !important;border-bottom:2px solid #e5e7eb !important}
 .h3:hover{border:1px solid #ffffff !important;background:#ee2a35 !important}
 .h4:hover{color:#ffffff !important}
+
+  .lang-switch{display:flex;align-items:center;gap:7px;flex:0 0 auto;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;line-height:1}
+  .lang-switch a{color:rgba(255,255,255,0.62);padding:8px 2px 5px;border-bottom:1px solid transparent;transition:color 150ms ease-in-out}
+  .lang-switch a:hover{color:#ffffff}
+  .lang-switch a[aria-current]{color:#ffffff;border-bottom-color:#ee2a35}
+  .lang-switch span{color:rgba(255,255,255,0.32)}
+  @media (max-width:1060px){.lang-switch{margin-left:auto}}
+  @media (max-width:520px){.nav-toggle{padding:11px 13px}.nav-toggle>span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.lang-switch{gap:5px}header{column-gap:12px !important}}
+  @media (max-width:350px){header>a:first-child{gap:8px !important}header>a:first-child img{height:28px !important;width:28px !important}header>a:first-child>span{font-size:15px !important;gap:7px !important}}
 </style>
 </head>
 <body>
@@ -105,6 +117,7 @@
     <a href="/news" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">News</a>
     <a href="/contact" style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82);border-bottom:1px solid transparent;padding-bottom:3px;transition:all 150ms ease-in-out" class="h0 m27 m29">Contact</a>
   </nav>
+  <nav class="lang-switch" aria-label="Language"><a href="/accessibility" lang="en" hreflang="en" aria-current="true">EN</a><span aria-hidden="true">/</span><a href="/de/accessibility" lang="de" hreflang="de">DE</a></nav>
   <label for="navToggle" class="nav-toggle"><span style="display:flex;flex-direction:column;gap:3px"><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span><span style="width:14px;height:1.5px;background:#ffffff;display:block"></span></span><span>Menu</span></label>
   <a href="https://app.notion.com/p/Open-Positions-3e3053120ddf80d396cbc74f6b9ff3fe?source=copy_link" target="_blank" rel="noopener" class="nav-cta h1 m11 m27 m29" style="flex:0 0 auto;white-space:nowrap;background:#ee2a35;color:#ffffff;border:1px solid #ee2a35;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:11px 20px;transition:all 150ms ease-in-out">Apply to Join</a>
   <div class="nav-drawer">
