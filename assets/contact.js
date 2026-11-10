@@ -33,7 +33,7 @@
     };
     btn.disabled = true;
     var label = btn.textContent;
-    btn.textContent = 'Sending…';
+    btn.textContent = document.documentElement.lang === 'de' ? 'Wird gesendet…' : 'Sending…';
     fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

@@ -1,4 +1,6 @@
-const nodemailer = require('nodemailer');
+// Contact form → Brevo Transactional Email API (no SMTP needed)
+// Env vars: BREVO_API_KEY (required), MAIL_FROM (verified Brevo sender),
+//           MAIL_TO (recipient), ALLOWED_ORIGIN (optional)
 
 const BACKGROUNDS = {
   active: 'Active searcher',
@@ -85,21 +87,27 @@ module.exports = async (req, res) => {
       '</td><td style="white-space:pre-wrap">' + esc(v) + '</td></tr>').join('') + '</table>';
 
   try {
-    const port = Number(process.env.SMTP_PORT || 465);
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port,
-      secure: port === 465,
-      auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS }
+    const r = await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'content-type': 'application/json',
+        'api-key': (process.env.BREVO_API_KEY || '').trim()
+      },
+      body: JSON.stringify({
+        sender: { name: 'FS SearchFund Website', email: (process.env.MAIL_FROM || process.env.SMTP_FROM || '').trim() },
+        to: [{ email: (process.env.MAIL_TO || 'Info@fs-searchfund.com').trim() }],
+        replyTo: { email: d.email, name: (d.firstName + ' ' + d.lastName).slice(0, 200) },
+        subject: 'Website enquiry: ' + d.firstName + ' ' + d.lastName + ' (' + BACKGROUNDS[d.background] + ')',
+        textContent: text,
+        htmlContent: html
+      })
     });
-    await transporter.sendMail({
-      from: '"FS SearchFund Website" <' + (process.env.SMTP_FROM || process.env.SMTP_USER) + '>',
-      to: process.env.MAIL_TO || 'Info@fs-searchfund.com',
-      replyTo: '"' + (d.firstName + ' ' + d.lastName).replace(/"/g, '') + '" <' + d.email + '>',
-      subject: 'Website enquiry: ' + d.firstName + ' ' + d.lastName + ' (' + BACKGROUNDS[d.background] + ')',
-      text,
-      html
-    });
+    if (!r.ok) {
+      const body = await r.text().catch(() => '');
+      console.error('Brevo error:', r.status, body.slice(0, 500));
+      return res.status(500).json({ ok: false, error: 'mail_failed' });
+    }
     return res.status(200).json({ ok: true });
   } catch (e) {
     console.error('Mail error:', e && e.message);
